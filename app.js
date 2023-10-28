@@ -5,7 +5,8 @@ function getJokes(e) {
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', `https://api.icndb.com/jokes/random/${number}`, true);
+    xhr.open('GET', "https://api.chucknorris.io/jokes/random", true);
+    // `https://api.icndb.com/jokes/random/${number}`
 
     xhr.onload = function () {
         if (this.status === 200) {
